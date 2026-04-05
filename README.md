@@ -49,3 +49,12 @@ I experimented with random search vs a grid search for the acquisition function 
 
 ### Week 3
 The approach I have taken is to generate suggested points to search using EI with Xi from 0 to 5 and UCB with kappa values ranging from 0.1 to 20. I have then compared the points suggested by each approach and made an observational judgement call on which point to select for each function – but in all cases looking for more exploratory points.
+
+### Week 4
+The approach I have taken is to generate suggested points to search using EI with Xi from 0 to 5 and UCB with kappa values ranging from 0.1 to 20. This week I tried experimenting and solving the kernel parameters for each problem to improve the GP output. This showed that the optimium Kernel and hyperparameters for each problem differed slight.
+Once again I compared the points suggested and made observational judgements on which point to select from those proposed.
+
+### Week 5
+This week I will attempt to use NNs to help show me the dimensions that have most impact on the output to help guide the direction of my GP.
+
+
