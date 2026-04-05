@@ -55,6 +55,9 @@ The approach I have taken is to generate suggested points to search using EI wit
 Once again I compared the points suggested and made observational judgements on which point to select from those proposed.
 
 ### Week 5
-This week I will attempt to use NNs to help show me the dimensions that have most impact on the output to help guide the direction of my GP.
+This week I used changed the acquisition functions because both the EI and UCB functions were tending to hug the boundaries or proposing points already sampled. As a result I tried a couple of boundary and duplication penalty functions for the acquisiton function proposals and experimented wiht different weighting and scaling numbers before settling on 10% reduction in acquistion function value if wihtin 1/20th of the boundary or 1/50th for higher dimensions.
+Once again I compared the points suggested and made observational judgements on which point to select from those proposed for the different EI and UCB Xi/Kappa values. This week I found for the lower dimensions I used UCB with high kappam and for high dimension problems tended towards Expected Improvement with exploration Xi.
+
+
 
 
