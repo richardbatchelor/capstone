@@ -58,6 +58,13 @@ Once again I compared the points suggested and made observational judgements on 
 This week I used changed the acquisition functions because both the EI and UCB functions were tending to hug the boundaries or proposing points already sampled. As a result I tried a couple of boundary and duplication penalty functions for the acquisiton function proposals and experimented wiht different weighting and scaling numbers before settling on 10% reduction in acquistion function value if wihtin 1/20th of the boundary or 1/50th for higher dimensions.
 Once again I compared the points suggested and made observational judgements on which point to select from those proposed for the different EI and UCB Xi/Kappa values. This week I found for the lower dimensions I used UCB with high kappam and for high dimension problems tended towards Expected Improvement with exploration Xi.
 
+### Week 6
+This week I added visualisation for each function for each dimension, plus changed my existing visualisation. 
+I also discovered that GP kernels can have automatic relevance determination by configuring different lengthscales for each dimension when creating the Kernel and then fitting of the GaussianProcessRegressor to the data.
+These provided much more insight into the relevance of the different dimensions for each function. I also realised that some of my EI acquisition functions were not returning any valid results from the process, so I can ignore them.
+Overall, afterf checking the graphs, and the ARD from the fitted model, I could understand why the acquisition functions were choosing tyhe points to exploit and the points to explore. For the lower dimensions that I could visualise better they met with my gut instinct, so generally this week I chose the poitns suggetsed by UCB wioht Kappa of 20, and in one case used the EI with extreme explore.
+
+
 
 
 
