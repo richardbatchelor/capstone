@@ -64,6 +64,13 @@ I also discovered that GP kernels can have automatic relevance determination by 
 These provided much more insight into the relevance of the different dimensions for each function. I also realised that some of my EI acquisition functions were not returning any valid results from the process, so I can ignore them.
 Overall, afterf checking the graphs, and the ARD from the fitted model, I could understand why the acquisition functions were choosing tyhe points to exploit and the points to explore. For the lower dimensions that I could visualise better they met with my gut instinct, so generally this week I chose the poitns suggetsed by UCB wioht Kappa of 20, and in one case used the EI with extreme explore.
 
+### Week 7
+This week I have added further kernel hyperparameter configuration, with fitting of combinatorial kernels including, noise and constant kernels in conjunction with a base RBF or Matern Kernel.   I have added the WhiteKernel rather than relying on the nu value of the RBF/Matern Kernel which allows the GPR to learn the noise level.
+Again, I am using the automatic relevance determination  for highlighting the features whihc are driving the model, although this time I have relied on the default min/max length scales rather limiting from 0.01 to 100. 
+From the sample proposals, where there was consistency in the acquisition functions across the different explore/exploitation hyper params, like in the lower dimensions I have submitted those points, but for the higher dimensions and more generally I have submitted the point suggested by Xi 20 for higher exploration using Expected Improvement.
+
+
+### Week 8
 
 
 
