@@ -71,6 +71,12 @@ From the sample proposals, where there was consistency in the acquisition functi
 
 
 ### Week 8
+This week, as part of the LLM module, and in particular the questiosn asked int he Capstone project prompt, I stopped using my GP code and wrote a Claude API based LLM query testing experimenting with temperature, top_k and top_p settings. I ended up using the confident LLM suggetsions to provide the submission this week.
+
+### Week 8
+This week I reverted to usinmg my own Gaussian Processes code with UCB and EI acquisition functions. Adoptiuong exploitative settings of kappa =0.1 for UCB and Xi = 0 for Expected Improvement I used Expected Improvement for 3d and below and UCB exploit for the higher dimensions.
+I also recorded the LLM view and the reasoning was all sensible for the points it suggetsed, but I chose to stick wiht the process and used the GP suggestions instead.
+
 
 
 
